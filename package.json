@@ -1,7 +1,7 @@
 {
   "name": "lulinjs",
   "version": "0.1.0",
-  "description": "Coolest and most useful utils functions for javascript",
+  "description": "Coolest and most useful utils functions for javascript/typescript",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
