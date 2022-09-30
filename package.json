@@ -2,10 +2,21 @@
   "name": "lulinjs",
   "version": "0.1.0",
   "description": "Coolest and most useful utils functions for javascript/typescript",
-  "main": "index.ts",
+  "main": "./lib/lulin.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "sideEffects": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "style": "eslint *.js .internal/**/*.js",
+    "test": "mocha -r esm test/*.test.js",
+    "validate": "npm run style && npm run test"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-import": "^2.22.1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
