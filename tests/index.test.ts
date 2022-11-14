@@ -1,6 +1,7 @@
 import { describe, expect, test } from "@jest/globals";
 import {
   capitalize,
+  generateRandomNumber,
   capitalizeFirstLetter,
   capitalizeAllStartingWords,
 } from "../lib/lulin";
@@ -25,4 +26,11 @@ test("should capitalize ALL letters of the given text", () => {
     "hello world! everything should be capitalized",
   );
   expect(capitalized).toEqual("HELLO WORLD! EVERYTHING SHOULD BE CAPITALIZED");
+});
+
+// generateRandomNumber
+test("should generate random number between the given minimum and maximum numbers", () => {
+  const randomNumber = generateRandomNumber(0, 100);
+  expect(randomNumber).toBeGreaterThanOrEqual(0);
+  expect(randomNumber).toBeLessThanOrEqual(100);
 });
