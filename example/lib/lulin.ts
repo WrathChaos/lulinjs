@@ -89,66 +89,28 @@ export const generateRandomBoolean = () => Math.random() >= 0.5;
  */
 export const coinflip = () => Math.random() >= 0.5;
 
-/**
- * Check if the given number is even or not
- * @param val
- */
 export const isEven = (val: number) => val % 2 === 0;
 
-/**
- * Remove all the duplicate values in the given array
- * @param arr
- */
 export const removeAllDuplicateValuesInArray = (arr: any[]) => [
   ...new Set(arr),
 ];
 
-/**
- * Check if the value is array or not
- * @param arr
- */
-export const isArray = (arr: any) => Array.isArray(arr);
+export const isArray = (arr: any[]) => Array.isArray(arr);
 
-/**
- * Generate random string with numbers
- */
 export const generateRandomString = () => Math.random().toString(36).slice(2);
 
-/**
- * Merge two given arrays
- * @param a
- * @param b
- */
 export const mergeArrays = (a: any[], b: any[]) => [...a, ...b];
 
-/**
- * Merge two given arrays and remove the duplicates
- * @param a
- * @param b
- */
 export const mergeArraysAndRemoveDuplicates = (a: any[], b: any[]) => [
   ...new Set([...a, ...b]),
 ];
 
-/**
- * Gets the true type with the given any object
- * @param obj
- */
 export const getTrueType = (obj: any) =>
   Object.prototype.toString.call(obj).slice(8, -1).toLocaleLowerCase();
 
-/**
- * Check if the given array is NOT empty
- * @param arr
- */
 export const isNotEmptyArray = (arr: any[]) =>
   Array.isArray(arr) && arr.length > 0;
 
-/**
- * parse the json safely
- * Yes, still you need to handle if the json string is not valid
- * @param string
- */
 export const safelyParseJson = (string?: string | null) => {
   try {
     return JSON.parse(string as string);
@@ -157,59 +119,30 @@ export const safelyParseJson = (string?: string | null) => {
   }
 };
 
-/**
- * Check if the given object is empty or not
- * @param obj
- */
 export const isEmptyObj = (obj: any) =>
   Reflect.ownKeys(obj).length === 0 && obj.constructor === Object;
 
-/**
- * Shuffle values of the given array
- * @param arr
- */
 export const shuffleArray = (arr: any[]) => arr.sort(() => 0.5 - Math.random());
 
-/**
- * Convert snake case to came case
- * @param str
- */
 export const convertSnakeToCamelCase = (str: string) => {
   return str.replace(/([-_][a-z])/g, (group) =>
     group.toUpperCase().replace("-", "").replace("_", ""),
   );
 };
 
-/**
- * Generate random hex color
- */
-export const generateRandomHexColor = () =>
+export const getRandomHexColor = () =>
   `#${Math.floor(Math.random() * 0xffffff)
     .toString(16)
     .padEnd(6, "0")}`;
 
-/**
- * Convert the given RGB to hex color
- * @param r
- * @param g
- * @param b
- */
 export const convertRGBToHexColor = (r: number, g: number, b: number) =>
   "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 
-/**
- * Get the min-max of the given array
- * @param arr
- */
 export const getMinMaxOfArray = (arr: any[]) => [
   Math.min(...arr),
   Math.max(...arr),
 ];
 
-/**
- * wait/sleep the given delay time
- * @param delay
- */
 export const sleep = (delay: number): Promise<void> => {
   return new Promise((resolve) => setTimeout(resolve, delay));
 };
