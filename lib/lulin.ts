@@ -21,12 +21,11 @@ export const capitalizeAllStartingWords = (
   );
 
 /**
- * capitalize the whole words on the given string
+ * capitalize the ALL letters on the given string
  * @param str
  * @returns
  */
-export const capitalize = (str: string) =>
-  str.charAt(0).toUpperCase() + str.slice(1);
+export const capitalize = (str: string) => str.toUpperCase();
 
 /**
  * Generate random number between given minimum and maximum number values
