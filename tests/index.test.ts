@@ -2,6 +2,7 @@ import { describe, expect, test } from "@jest/globals";
 import {
   capitalize,
   diffArrays,
+  diffArraysWithId,
   generateRandomNumber,
   capitalizeFirstLetter,
   capitalizeAllStartingWords,
@@ -40,4 +41,13 @@ test("should generate random number between the given minimum and maximum number
 test("should differentiate of the given two arrays", () => {
   const diffArray = diffArrays([1, 2, 3], [2, 3]);
   expect(diffArray).toEqual([1]);
+});
+
+// diffArraysWithId
+test("should differentiate of the given two arrays depend on the ids", () => {
+  const diffArray = diffArraysWithId(
+    [{ id: 1 }, { id: 2 }, { id: 3 }],
+    [{ id: 2 }, { id: 3 }],
+  );
+  expect(diffArray).toEqual([{ id: 1 }]);
 });
