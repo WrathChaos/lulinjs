@@ -1,6 +1,7 @@
 import { describe, expect, test } from "@jest/globals";
 import {
   capitalize,
+  diffArrays,
   generateRandomNumber,
   capitalizeFirstLetter,
   capitalizeAllStartingWords,
@@ -33,4 +34,10 @@ test("should generate random number between the given minimum and maximum number
   const randomNumber = generateRandomNumber(0, 100);
   expect(randomNumber).toBeGreaterThanOrEqual(0);
   expect(randomNumber).toBeLessThanOrEqual(100);
+});
+
+// diffArrays
+test("should differentiate of the given two arrays", () => {
+  const diffArray = diffArrays([1, 2, 3], [2, 3]);
+  expect(diffArray).toEqual([1]);
 });

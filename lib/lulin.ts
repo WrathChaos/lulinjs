@@ -33,24 +33,20 @@ export const capitalize = (str: string) => str.toUpperCase();
  * @param max
  * @returns
  */
-export const generateRandomNumber = (min: number, max: number) =>
+export const generateRandomNumber = (min: number, max: number): number =>
   Math.floor(Math.random() * (max - min + 1) + min);
 
 /**
- * Filter the differentiate of the given two arrays
+ * Filter to differentiate of the given two arrays
  * @param arr1
  * @param arr2
  * @returns
  */
-export const diffArrays = (arr1: any[], arr2: any[]): any[] =>
-  arr1 &&
-  arr2 &&
-  arr1.filter(
-    (obj1) => !arr2.find((obj2) => obj1.id === obj2.id && obj2.isChecked),
-  );
+export const diffArrays = <T>(array1: T[], array2: T[]) =>
+  array1.filter((v) => !array2.includes(v));
 
 /**
- * Filter the differentiate of the given two arrays of ids
+ * Filter to differentiate of the given two arrays of ids
  * @param arr1
  * @param arr2
  * @returns
