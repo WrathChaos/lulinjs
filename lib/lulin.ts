@@ -74,7 +74,7 @@ export const generateRandomNumber = (min: number, max: number): number =>
   Math.floor(Math.random() * (max - min + 1) + min);
 
 /**
- * Generate random string with numbers
+ * Generate random string
  */
 export const generateRandomString = () => Math.random().toString(36).slice(2);
 
@@ -122,22 +122,6 @@ export const isArray = (arr: any) => Array.isArray(arr);
  * @param b
  */
 export const mergeArrays = (a: any[], b: any[]) => [...a, ...b];
-
-/**
- * Merge two given arrays and remove the duplicates
- * @param a
- * @param b
- */
-export const mergeArraysAndRemoveDuplicates = (a: any[], b: any[]) => [
-  ...new Set([...a, ...b]),
-];
-
-/**
- * Gets the true type with the given any object
- * @param obj
- */
-export const getTrueType = (obj: any) =>
-  Object.prototype.toString.call(obj).slice(8, -1).toLocaleLowerCase();
 
 /**
  * Check if the given array is NOT empty
@@ -201,7 +185,7 @@ export const getMinMaxOfArray = (arr: any[]) => [
 ];
 
 /**
- * wait/sleep the given delay time
+ * wait/sleep the given delay time as milliseconds
  * @param delay
  */
 export const sleep = (delay: number): Promise<void> => {
