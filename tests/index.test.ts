@@ -1,11 +1,13 @@
 import { describe, expect, test } from "@jest/globals";
 import {
+  diffDatesByDay,
   capitalize,
   diffArrays,
   diffArraysWithId,
   generateRandomNumber,
   capitalizeFirstLetter,
   capitalizeAllStartingWords,
+  isBlankString,
 } from "../lib/lulin";
 
 // capitalizeFirstLetter
@@ -50,4 +52,23 @@ test("should differentiate of the given two arrays depend on the ids", () => {
     [{ id: 2 }, { id: 3 }],
   );
   expect(diffArray).toEqual([{ id: 1 }]);
+});
+
+// diffDatesByDay
+test("should differentiate of the given two dates by day", () => {
+  const diff = diffDatesByDay(1673493926000, 1673017526000);
+  expect(diff).toEqual(5);
+});
+
+// isBlankString
+test("should check if the given string is blank or not", () => {
+  const isBlank = isBlankString(" ");
+  expect(isBlank).toEqual(true);
+});
+
+// generateRandomNumber
+test("should generate a random number between given min and max parameters", () => {
+  const generatedNumber = generateRandomNumber(0, 100);
+  expect(generatedNumber).toBeGreaterThanOrEqual(0);
+  expect(generatedNumber).toBeLessThanOrEqual(100);
 });

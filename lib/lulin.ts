@@ -28,15 +28,6 @@ export const capitalizeAllStartingWords = (
 export const capitalize = (str: string) => str.toUpperCase();
 
 /**
- * Generate random number between given minimum and maximum number values
- * @param min
- * @param max
- * @returns
- */
-export const generateRandomNumber = (min: number, max: number): number =>
-  Math.floor(Math.random() * (max - min + 1) + min);
-
-/**
  * Filter to differentiate of the given two arrays
  * @param arr1
  * @param arr2
@@ -57,12 +48,12 @@ export const diffArraysWithId = (arr1: any[], arr2: any[]): any[] =>
   arr1.filter((obj1) => !arr2.find((obj2) => obj1.id === obj2.id && obj2.id));
 
 /**
- * Differentiates of the given of two dates
+ * Differentiates of the given of two dates by day
  * @param date
  * @param date2
  * @returns
  */
-export const diffDates = (date: number, date2: number) =>
+export const diffDatesByDay = (date: number, date2: number) =>
   Math.floor(Math.abs(date - date2) / 86400000);
 
 /**
@@ -74,10 +65,33 @@ export const isBlankString = (str: string) =>
   !str || str.length === 0 || /^\s*$/.test(str);
 
 /**
+ * Generate random number between given minimum and maximum number values
+ * @param min
+ * @param max
+ * @returns
+ */
+export const generateRandomNumber = (min: number, max: number): number =>
+  Math.floor(Math.random() * (max - min + 1) + min);
+
+/**
+ * Generate random string with numbers
+ */
+export const generateRandomString = () => Math.random().toString(36).slice(2);
+
+/**
+ * Generate random hex color
+ */
+export const generateRandomHexColor = () =>
+  `#${Math.floor(Math.random() * 0xffffff)
+    .toString(16)
+    .padEnd(6, "0")}`;
+
+/**
  * Generate a random boolean
  * @returns boolean
  */
 export const generateRandomBoolean = () => Math.random() >= 0.5;
+
 /**
  * Coin flip randomly
  * @returns
@@ -94,20 +108,13 @@ export const isEven = (val: number) => val % 2 === 0;
  * Remove all the duplicate values in the given array
  * @param arr
  */
-export const removeAllDuplicateValuesInArray = (arr: any[]) => [
-  ...new Set(arr),
-];
+export const removeAllDuplicates = (arr: any[]) => [...new Set(arr)];
 
 /**
  * Check if the value is array or not
  * @param arr
  */
 export const isArray = (arr: any) => Array.isArray(arr);
-
-/**
- * Generate random string with numbers
- */
-export const generateRandomString = () => Math.random().toString(36).slice(2);
 
 /**
  * Merge two given arrays
@@ -174,14 +181,6 @@ export const convertSnakeToCamelCase = (str: string) => {
     group.toUpperCase().replace("-", "").replace("_", ""),
   );
 };
-
-/**
- * Generate random hex color
- */
-export const generateRandomHexColor = () =>
-  `#${Math.floor(Math.random() * 0xffffff)
-    .toString(16)
-    .padEnd(6, "0")}`;
 
 /**
  * Convert the given RGB to hex color
