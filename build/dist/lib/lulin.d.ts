@@ -18,13 +18,6 @@ export declare const capitalizeAllStartingWords: (str: string, lower?: boolean) 
  */
 export declare const capitalize: (str: string) => string;
 /**
- * Generate random number between given minimum and maximum number values
- * @param min
- * @param max
- * @returns
- */
-export declare const generateRandomNumber: (min: number, max: number) => number;
-/**
  * Filter to differentiate of the given two arrays
  * @param arr1
  * @param arr2
@@ -39,18 +32,33 @@ export declare const diffArrays: <T>(array1: T[], array2: T[]) => T[];
  */
 export declare const diffArraysWithId: (arr1: any[], arr2: any[]) => any[];
 /**
- * Differentiates of the given of two dates
+ * Differentiates of the given of two dates by day
  * @param date
  * @param date2
  * @returns
  */
-export declare const diffDates: (date: number, date2: number) => number;
+export declare const diffDatesByDay: (date: number, date2: number) => number;
 /**
  * Check if the given string is blank or not
  * @param str
  * @returns
  */
 export declare const isBlankString: (str: string) => boolean;
+/**
+ * Generate random number between given minimum and maximum number values
+ * @param min
+ * @param max
+ * @returns
+ */
+export declare const generateRandomNumber: (min: number, max: number) => number;
+/**
+ * Generate random string
+ */
+export declare const generateRandomString: () => string;
+/**
+ * Generate random hex color
+ */
+export declare const generateRandomHexColor: () => string;
 /**
  * Generate a random boolean
  * @returns boolean
@@ -70,33 +78,18 @@ export declare const isEven: (val: number) => boolean;
  * Remove all the duplicate values in the given array
  * @param arr
  */
-export declare const removeAllDuplicateValuesInArray: (arr: any[]) => any[];
+export declare const removeAllDuplicates: (arr: any[]) => any[];
 /**
  * Check if the value is array or not
  * @param arr
  */
 export declare const isArray: (arr: any) => boolean;
 /**
- * Generate random string with numbers
- */
-export declare const generateRandomString: () => string;
-/**
  * Merge two given arrays
  * @param a
  * @param b
  */
 export declare const mergeArrays: (a: any[], b: any[]) => any[];
-/**
- * Merge two given arrays and remove the duplicates
- * @param a
- * @param b
- */
-export declare const mergeArraysAndRemoveDuplicates: (a: any[], b: any[]) => any[];
-/**
- * Gets the true type with the given any object
- * @param obj
- */
-export declare const getTrueType: (obj: any) => string;
 /**
  * Check if the given array is NOT empty
  * @param arr
@@ -124,10 +117,6 @@ export declare const shuffleArray: (arr: any[]) => any[];
  */
 export declare const convertSnakeToCamelCase: (str: string) => string;
 /**
- * Generate random hex color
- */
-export declare const generateRandomHexColor: () => string;
-/**
  * Convert the given RGB to hex color
  * @param r
  * @param g
@@ -140,7 +129,7 @@ export declare const convertRGBToHexColor: (r: number, g: number, b: number) => 
  */
 export declare const getMinMaxOfArray: (arr: any[]) => number[];
 /**
- * wait/sleep the given delay time
+ * wait/sleep the given delay time as milliseconds
  * @param delay
  */
 export declare const sleep: (delay: number) => Promise<void>;

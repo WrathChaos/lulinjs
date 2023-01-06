@@ -2,4 +2,6 @@
 
 Coolest and most useful utils functions for javascript/typescript
 
-## 🔨 WIP
+```bash
+npm i lulinjs
+```

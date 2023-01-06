@@ -1,8 +1,8 @@
 {
   "name": "lulinjs",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.2",
   "description": "Coolest and most useful utils functions for javascript/typescript",
-  "main": "./lib/lulin.js",
+  "main": "./build/dist/lib/lulin.js",
   "keywords": [
     "javascript",
     "typescript",

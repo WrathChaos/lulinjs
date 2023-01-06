@@ -18,13 +18,6 @@ export const capitalizeAllStartingWords = (str, lower = false) => (lower ? str.t
  */
 export const capitalize = (str) => str.toUpperCase();
 /**
- * Generate random number between given minimum and maximum number values
- * @param min
- * @param max
- * @returns
- */
-export const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-/**
  * Filter to differentiate of the given two arrays
  * @param arr1
  * @param arr2
@@ -41,18 +34,35 @@ export const diffArraysWithId = (arr1, arr2) => arr1 &&
     arr2 &&
     arr1.filter((obj1) => !arr2.find((obj2) => obj1.id === obj2.id && obj2.id));
 /**
- * Differentiates of the given of two dates
+ * Differentiates of the given of two dates by day
  * @param date
  * @param date2
  * @returns
  */
-export const diffDates = (date, date2) => Math.floor(Math.abs(date - date2) / 86400000);
+export const diffDatesByDay = (date, date2) => Math.floor(Math.abs(date - date2) / 86400000);
 /**
  * Check if the given string is blank or not
  * @param str
  * @returns
  */
 export const isBlankString = (str) => !str || str.length === 0 || /^\s*$/.test(str);
+/**
+ * Generate random number between given minimum and maximum number values
+ * @param min
+ * @param max
+ * @returns
+ */
+export const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+/**
+ * Generate random string
+ */
+export const generateRandomString = () => Math.random().toString(36).slice(2);
+/**
+ * Generate random hex color
+ */
+export const generateRandomHexColor = () => `#${Math.floor(Math.random() * 0xffffff)
+    .toString(16)
+    .padEnd(6, "0")}`;
 /**
  * Generate a random boolean
  * @returns boolean
@@ -72,37 +82,18 @@ export const isEven = (val) => val % 2 === 0;
  * Remove all the duplicate values in the given array
  * @param arr
  */
-export const removeAllDuplicateValuesInArray = (arr) => [
-    ...new Set(arr),
-];
+export const removeAllDuplicates = (arr) => [...new Set(arr)];
 /**
  * Check if the value is array or not
  * @param arr
  */
 export const isArray = (arr) => Array.isArray(arr);
 /**
- * Generate random string with numbers
- */
-export const generateRandomString = () => Math.random().toString(36).slice(2);
-/**
  * Merge two given arrays
  * @param a
  * @param b
  */
 export const mergeArrays = (a, b) => [...a, ...b];
-/**
- * Merge two given arrays and remove the duplicates
- * @param a
- * @param b
- */
-export const mergeArraysAndRemoveDuplicates = (a, b) => [
-    ...new Set([...a, ...b]),
-];
-/**
- * Gets the true type with the given any object
- * @param obj
- */
-export const getTrueType = (obj) => Object.prototype.toString.call(obj).slice(8, -1).toLocaleLowerCase();
 /**
  * Check if the given array is NOT empty
  * @param arr
@@ -139,12 +130,6 @@ export const convertSnakeToCamelCase = (str) => {
     return str.replace(/([-_][a-z])/g, (group) => group.toUpperCase().replace("-", "").replace("_", ""));
 };
 /**
- * Generate random hex color
- */
-export const generateRandomHexColor = () => `#${Math.floor(Math.random() * 0xffffff)
-    .toString(16)
-    .padEnd(6, "0")}`;
-/**
  * Convert the given RGB to hex color
  * @param r
  * @param g
@@ -160,7 +145,7 @@ export const getMinMaxOfArray = (arr) => [
     Math.max(...arr),
 ];
 /**
- * wait/sleep the given delay time
+ * wait/sleep the given delay time as milliseconds
  * @param delay
  */
 export const sleep = (delay) => {
