@@ -4,13 +4,17 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import CopySvg from "@site/static/svg/copy.svg";
 import LulinJSSvg from "@site/static/svg/lulinjs.svg";
+import LogoSvg from "@site/static/svg/LJS.svg";
 import styles from "../css/header.module.css";
 
 const renderContent = () => {
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
-        <LulinJSSvg className={styles.lulinjs} />
+        <div className={styles.logoContainer}>
+          <LogoSvg className={styles.logoSvg} />
+          <LulinJSSvg className={styles.lulinjs} />
+        </div>
         <section className={styles.hero}>
           <div className={styles.heroWrapper}>
             <h1 className={styles.heading}>
