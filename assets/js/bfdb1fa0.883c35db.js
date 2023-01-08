@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[470],{9785:l=>{l.exports=JSON.parse('{"label":"hello","permalink":"/lulinjs/blog/tags/hello","allTagsPath":"/lulinjs/blog/tags","count":2}')}}]);
