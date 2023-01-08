@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "LulinJS",
   tagline: "LulinJS",
-  url: "https://wrathchaos.github.io/lulinjs/",
+  url: "https://wrathchaos.github.io/lulinjs",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
