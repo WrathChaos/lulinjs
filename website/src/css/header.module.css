@@ -22,6 +22,7 @@
 }
 
 .hero {
+    margin-top: 3vh;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -57,11 +58,11 @@
 }
 
 .flexItem {
-    /* margin: 0 0.5rem; */
+     margin-top: 3vh;
 }
 
 .button {
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
     border-radius: 5px;
     transform-origin: 50% 50%;
@@ -94,32 +95,17 @@
     margin-left: 1em;
 }
 
-.phoneImageWrapper,
-.phoneImageWrapperOnLeft {
-    flex: 3;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    perspective: 1500px;
-}
-
-.phoneImageWrapper {
-    display: flex;
-}
-
-.phoneImageWrapperOnLeft {
-    display: none;
-}
 
 @media screen and (max-width: 1100px) and (min-width: 940px) {
     .buttonsWrapper {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .copyPaste {
-        margin-left: 0;
-        margin-top: 1em;
+        margin-left: 1em;
+        margin-top: 0;
     }
 }
 
@@ -145,18 +131,13 @@
         padding-top: 2em;
         padding-bottom: 2em;
     }
+}
 
-    .phoneImageWrapper img {
-        max-height: 320px;
-    }
-
-    .phoneImageWrapperOnLeft {
-        display: flex;
-    }
-
-    .phoneImageWrapper {
-        display: none;
-    }
+.lulinjs {
+    position: absolute;
+    left: 0;
+    height: 15vh;
+    width: 25vh;
 }
 
 .copyIcon {

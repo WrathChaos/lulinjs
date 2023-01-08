@@ -3,33 +3,38 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import CopySvg from "@site/static/svg/copy.svg";
-import DarkImage from "@site/static/img/masked-dark-phone.png";
-import LightImage from "@site/static/img/masked-light-phone.png";
-// import useThemeContext from "@theme/hooks/useThemeContext";
-
-// import styles from "./index.module.css";
+import LulinJSSvg from "@site/static/svg/lulinjs.svg";
 import styles from "../css/header.module.css";
 
-function Content() {
-  const isDarkTheme = true;
-
+const renderContent = () => {
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
+        <div className={styles.phoneImageWrapper}>
+          <LulinJSSvg className={styles.lulinjs} />
+        </div>
         <section className={styles.hero}>
           <div className={styles.heroWrapper}>
             <h1 className={styles.heading}>
-              Make your components more intractable
+              Save time with day to day use functions
             </h1>
             <h2 className={styles.subHeading}>
-              A performant, easy to use
-              <strong> hold to open context menu</strong> for React Native
-              powered by Reanimated.
+              Easy to use,
+              <strong> save hours for day to day </strong> use javascript
+              helper\utils functions for any javascript, typescript projects.
             </h2>
+            <h3 className={styles.subHeading}>
+              It is fully tested with jest, new functions are adding
+              continuously.
+            </h3>
+            <h3 className={styles.subHeading}>
+              LulinJS is an open source project to help everyone to save time
+              with day to day use functions on every project.
+            </h3>
             <div className={`${styles.flex} ${styles.buttonsWrapper}`}>
               <div className={styles.flexItem}>
-                <Link className={styles.button} to="/docs">
-                  Get Started
+                <Link className={styles.button} to="/docs/category/features/">
+                  Getting Started
                 </Link>
               </div>
               <div className={styles.flexItem}>
@@ -43,24 +48,14 @@ function Content() {
               </div>
             </div>
           </div>
-          <div className={styles.phoneImageWrapper}>
-            <img
-              src={isDarkTheme ? DarkImage : LightImage}
-              style={{ maxHeight: 450 }}
-            />
-          </div>
         </section>
       </div>
     </header>
   );
-}
+};
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const isDarkTheme = true;
-  return (
-    <Layout>
-      <Content />
-    </Layout>
-  );
+  return <Layout>{renderContent()}</Layout>;
 }
