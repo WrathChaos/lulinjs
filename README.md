@@ -21,5 +21,6 @@ npm i lulinjs
 - [ ] Logo on README
 - [ ] Better README with Emojis and stuff
 - [ ] Add missing functions on the website
+- [ ] Change the search plugin
 - [ ] Versioning on Website
 - [ ] Multiple Languages on Website
