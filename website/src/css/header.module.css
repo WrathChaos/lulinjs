@@ -61,6 +61,10 @@
      margin-top: 3vh;
 }
 
+.logoWrapper {
+    display: flex;
+}
+
 .button {
     padding: 1rem 2rem;
     font-size: 1.2rem;
@@ -131,11 +135,13 @@
         padding-top: 2em;
         padding-bottom: 2em;
     }
+
 }
 
 .lulinjs {
     position: absolute;
-    left: 0;
+    left: 2vh;
+    top: 8vh;
     height: 15vh;
     width: 25vh;
 }

@@ -10,9 +10,7 @@ const renderContent = () => {
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
-        <div className={styles.phoneImageWrapper}>
-          <LulinJSSvg className={styles.lulinjs} />
-        </div>
+        <LulinJSSvg className={styles.lulinjs} />
         <section className={styles.hero}>
           <div className={styles.heroWrapper}>
             <h1 className={styles.heading}>

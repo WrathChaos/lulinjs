@@ -8,12 +8,12 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "LulinJS",
   tagline: "LulinJS",
-  url: "https://wrathchaos.github.io/lulinjs",
-  baseUrl: "/",
+  url: "https://wrathchaos.github.io",
+  baseUrl: "/lulinjs",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "freakycoder",
+  organizationName: "wrathchaos",
   projectName: "lulinjs",
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -48,13 +48,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/WrathChaos/lulinjs",
+          editUrl: "https://github.com/WrathChaos/lulinjs/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/WrathChaos/lulinjs",
+          editUrl: "https://github.com/WrathChaos/lulinjs/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
