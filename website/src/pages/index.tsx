@@ -14,11 +14,11 @@ const renderContent = () => {
         <section className={styles.hero}>
           <div className={styles.heroWrapper}>
             <h1 className={styles.heading}>
-              Save time with day to day use functions
+              Save time with day-to-day use functions
             </h1>
             <h2 className={styles.subHeading}>
               Easy to use,
-              <strong> save hours for day to day </strong> use javascript
+              <strong> save hours for day-to-day </strong> use javascript
               helper\utils functions for any javascript, typescript projects.
             </h2>
             <h3 className={styles.subHeading}>
