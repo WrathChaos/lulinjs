@@ -70,8 +70,7 @@ const config = {
         title: "LulinJS",
         items: [
           {
-            to: "docs",
-            activeBasePath: "into",
+            to: "docs/category/features",
             label: "Docs",
             position: "left",
           },
