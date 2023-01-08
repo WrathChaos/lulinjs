@@ -18,5 +18,8 @@ npm i lulinjs
 
 ## Roadmap
 
+- [ ] Logo on README
+- [ ] Better README with Emojis and stuff
+- [ ] Add missing functions on the website
 - [ ] Versioning on Website
 - [ ] Multiple Languages on Website
