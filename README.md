@@ -1,25 +1,24 @@
 <p align="left">
-  <img alt="React Native Typescript Boilerplate"
+<img alt="React Native Typescript Boilerplate"
         src="assets/lulinjs.svg" height="250"  />
+</p>
 
 # LulinJS
 
-Coolest and most useful utils functions for javascript/typescript
+🚀 Save time with day to day use of functions with LulinJS
 
-</p>
-
-## Install
+## Install ✨
 
 ```bash
 npm i lulinjs
 ```
 
-## [Documentation](https://wrathchaos.github.io/lulinjs/)
+## [Documentation 🌍](https://wrathchaos.github.io/lulinjs/)
 
 ## Roadmap
 
-- [ ] Logo on README
-- [ ] Better README with Emojis and stuff
+- [x] ~~Logo on README~~
+- [x] ~~Better README with Emojis and stuff~~
 - [ ] Add missing functions on the website
 - [ ] Change the search plugin
 - [ ] Versioning on Website
