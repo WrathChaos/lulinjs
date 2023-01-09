@@ -21,5 +21,6 @@ npm i lulinjs
 - [x] ~~Better README with Emojis and stuff~~
 - [ ] Add missing functions on the website
 - [ ] Change the search plugin
+- [ ] Dark Theme Support for LulinJS font logo
 - [ ] Versioning on Website
 - [ ] Multiple Languages on Website
