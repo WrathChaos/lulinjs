@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9140],{7258:e=>{e.exports=JSON.parse('{"title":"Features","slug":"/category/features","permalink":"/lulinjs/docs/category/features","navigation":{"next":{"title":"capitalize","permalink":"/lulinjs/docs/features/capitalize"}}}')}}]);
