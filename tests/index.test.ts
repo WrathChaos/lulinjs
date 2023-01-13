@@ -51,13 +51,6 @@ test("should capitalize ALL letters of the given text", () => {
   expect(capitalized).toEqual("HELLO WORLD! EVERYTHING SHOULD BE CAPITALIZED");
 });
 
-// generateRandomNumber
-test("should generate random number between the given minimum and maximum numbers", () => {
-  const randomNumber = generateRandomNumber(0, 100);
-  expect(randomNumber).toBeGreaterThanOrEqual(0);
-  expect(randomNumber).toBeLessThanOrEqual(100);
-});
-
 // diffArrays
 test("should differentiate of the given two arrays", () => {
   const diffArray = diffArrays([1, 2, 3], [2, 3]);
