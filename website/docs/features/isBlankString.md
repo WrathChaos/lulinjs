@@ -12,7 +12,7 @@ const result = isBlankString(" ")
 ```
 
 ```jsx live
-function DiffDatesByDay(props) {
+function IsBlankString(props) {
     return (
         <div>
             <h4>Result:</h4>
