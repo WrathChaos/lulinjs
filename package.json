@@ -1,6 +1,6 @@
 {
   "name": "lulinjs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "🚀 Save time with day to day use of functions with LulinJS",
   "main": "./build/dist/lib/lulin.js",
   "keywords": [

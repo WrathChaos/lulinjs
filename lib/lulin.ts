@@ -219,7 +219,7 @@ export const partition = (arr: any[], criteria: any) =>
  * Replace the given object's undefined values with null
  * @param obj
  */
-function replaceUndefinedWithNull(obj: any): any {
+export const replaceUndefinedWithNull = (obj: any) => {
   if (typeof obj === "object" && obj !== null) {
     for (const key in obj) {
       if (Object.prototype.hasOwnProperty.call(obj, key)) {
@@ -231,4 +231,4 @@ function replaceUndefinedWithNull(obj: any): any {
   }
 
   return obj;
-}
+};

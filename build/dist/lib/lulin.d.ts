@@ -154,3 +154,8 @@ export declare const getUnion: (...arr: any[]) => any[];
  * @returns
  */
 export declare const partition: (arr: any[], criteria: any) => any;
+/**
+ * Replace the given object's undefined values with null
+ * @param obj
+ */
+export declare const replaceUndefinedWithNull: (obj: any) => any;
