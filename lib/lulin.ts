@@ -214,3 +214,21 @@ export const getUnion = (...arr) => [...new Set(arr.flat())];
  */
 export const partition = (arr: any[], criteria: any) =>
   arr.reduce((acc, i) => (acc[criteria(i) ? 0 : 1].push(i), acc), [[], []]);
+
+/**
+ * Replace the given object's undefined values with null
+ * @param obj
+ */
+function replaceUndefinedWithNull(obj: any): any {
+  if (typeof obj === "object" && obj !== null) {
+    for (const key in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        obj[key] = replaceUndefinedWithNull(obj[key]);
+      }
+    }
+  } else if (typeof obj === "undefined") {
+    obj = null;
+  }
+
+  return obj;
+}
