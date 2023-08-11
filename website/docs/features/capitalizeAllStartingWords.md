@@ -1,6 +1,6 @@
 # capitalizeAllStartingWords
 
-Capitalize the FIRST letter of the given text
+Capitalize all the starting letters of the given text
 
 ## Usage
 

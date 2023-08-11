@@ -1,6 +1,6 @@
 # diffArrays
 
-Capitalize the FIRST letter of the given text
+Difference between two arrays.
 
 ## Usage
 

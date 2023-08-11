@@ -1,6 +1,6 @@
 # diffArraysWithId
 
-Capitalize the FIRST letter of the given text
+Diff two arrays of objects with an id property.
 
 ## Usage
 

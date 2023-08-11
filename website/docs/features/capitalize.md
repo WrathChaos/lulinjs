@@ -1,6 +1,6 @@
 # capitalize
 
-Capitalize the FIRST letter of the given text
+Capitalize the all letters of the given text
 
 ## Usage
 

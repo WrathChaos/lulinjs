@@ -1,6 +1,6 @@
 # isBlankString
 
-Capitalize the FIRST letter of the given text
+Check if a string is blank
 
 ## Usage
 

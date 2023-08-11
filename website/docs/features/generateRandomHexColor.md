@@ -1,6 +1,6 @@
 # generateRandomHexColor
 
-Capitalize the FIRST letter of the given text
+Generate random hex color
 
 ## Usage
 

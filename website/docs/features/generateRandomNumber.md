@@ -1,6 +1,6 @@
 # generateRandomNumber
 
-Capitalize the FIRST letter of the given text
+Generate random number
 
 ## Usage
 

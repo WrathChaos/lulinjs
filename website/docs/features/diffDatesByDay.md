@@ -1,6 +1,6 @@
 # diffDatesByDay
 
-Capitalize the FIRST letter of the given text
+Difference between two dates in days.
 
 ## Usage
 
