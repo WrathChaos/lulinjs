@@ -14,7 +14,7 @@ const result = generateRandomString()
 ```jsx live
 import {generateRandomString} from "./lulin";
 
-function GenerateRandomNumber() {
+function GenerateRandomString() {
     return (
         <div>
             <h4>Result:</h4>

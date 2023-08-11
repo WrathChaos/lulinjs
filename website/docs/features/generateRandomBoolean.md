@@ -1,6 +1,6 @@
 # generateRandomBoolean
 
-Capitalize the FIRST letter of the given text
+Generate a random boolean value
 
 ## Usage
 
@@ -14,7 +14,7 @@ const result = generateRandomBoolean()
 ```jsx live
 import {generateRandomBoolean} from "./lulin";
 
-function GenerateRandomNumber() {
+function GenerateRandomBoolean() {
     return (
         <div>
             <h4>Result:</h4>
